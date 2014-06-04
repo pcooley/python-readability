@@ -5,4 +5,4 @@ python:
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install bottle
 # command to run tests, e.g. python setup.py test
-script: server/test/maintest.py
+script: python server/test/maintest.py
