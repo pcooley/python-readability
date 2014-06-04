@@ -6,3 +6,8 @@ python:
 install: pip install bottle
 # command to run tests, e.g. python setup.py test
 script: python server/test/maintest.py
+notifications:
+	email:
+		recipients:
+			- pcooley@gmail.com
+			- jhelm@usa.net
