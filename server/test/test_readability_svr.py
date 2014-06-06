@@ -1,7 +1,8 @@
 import sys
+import os
 import unittest
-
-sys.path.append('..')      # import the root directory
+fn = os.path.join(os.path.dirname(__file__), '../')
+sys.path.append(fn)      # import the root directory
 import readability_svr
 
 def test():
