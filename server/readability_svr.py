@@ -7,7 +7,6 @@ sys.path.append('./')      # import the root directory
 class ReadabilityService(object):
 
     def readability(self, request):
-        print request
         return request
 
 @route('/readability')
