@@ -8,3 +8,9 @@ Items:
 + JS Unit test framework selection
 + 
 
+Next session goals:
++ Setup John on the github project
+  + pull + pushes
++ Create another unit test
+  + implement method that pass unit test
+  + Propose: word count
