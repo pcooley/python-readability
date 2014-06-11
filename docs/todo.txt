@@ -1,1 +1,10 @@
 we will list the next things todo here.
+
+Items:
++ individual python module to calculate readability scores
+  + Flesch-Kincaid Grade Level
+  + Gunning-Fog Score
+  + ??
++ JS Unit test framework selection
++ 
+
