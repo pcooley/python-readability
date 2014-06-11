@@ -3,3 +3,9 @@ require.js setup - http://www.sitepoint.com/require-js-setup-time-2-minutes/
 
 Python readability
 https://github.com/wimmuskee/readability-score
+https://github.com/ifrost/droopy
+https://code.google.com/p/nltk/source/browse/trunk/nltk_contrib/
+
+
+Readability API
+https://www.mashape.com/ipeirotis/readability-metrics/#!documentation
