@@ -8,7 +8,8 @@ requirejs.config({
     },
     "shim": {
         "backbone": ["jquery", "underscore"],
-        "bootstrap": ["jquery"]
+        "bootstrap": ["jquery"],
+	"knockout" : ["jquery"]
     }
 });
  
