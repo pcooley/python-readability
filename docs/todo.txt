@@ -1,4 +1,4 @@
-we will list the next things todo here.
+We will list the next things todo here.
 
 Items:
 + individual python module to calculate readability scores
