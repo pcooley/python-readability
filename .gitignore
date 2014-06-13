@@ -1,0 +1,5 @@
+#ignore all emacs backup files
+*~
+# ignore compiled python
+
+*.pyc
