@@ -1,4 +1,4 @@
-from bottle import post, route, run, template, request, BaseResponse
+from bottle import post, route, run, template, request, BaseResponse, response
 import sys
 import os
 import barrister
@@ -6,8 +6,10 @@ import barrister
 sys.path.append('./')      # import the root directory
 class ReadabilityService(object):
 
-    def readability(self, request):
-        return request
+    def readability(self, req):
+        stringlength = len(req["text"])
+        response = { "length":"%s" %(stringlength)}
+        return response
 
 @route('/hello2/<name>')
 def index(name):
@@ -15,10 +17,9 @@ def index(name):
 
 @post('/readability')
 def read():
-    resp_data = server.call_json(request.json)
-    print request.body.getvalue()
-    resp = BaseResponse(resp_data, 200, 'application/json')
-    return resp
+    resp_data = server.call_json(request.body.getvalue())
+    response.content_type="application/json"
+    return resp_data
 
 @post('/hello')
 def hello():

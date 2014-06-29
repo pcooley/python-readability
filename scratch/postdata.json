@@ -1,6 +1,8 @@
 {
-    "jsonrpc":"2.0",
-    "id":"adapEuxoKIU3GAxbhiHp",
-    "method":"Readablility.readability",
-    "params":["1234567890"]
+  "jsonrpc": "2.0",
+  "id": "nJuMVxHoRnHtK5txBd9o",
+  "method": "ReadabilityService.readability",
+  "params": [ {"text":"1234567890"}
+    
+  ]
 }
