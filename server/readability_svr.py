@@ -2,14 +2,10 @@ from bottle import post, route, run, template, request, BaseResponse, response
 import sys
 import os
 import barrister
+from service.ReadabilityService import ReadabilityService
+
 
 sys.path.append('./')      # import the root directory
-class ReadabilityService(object):
-
-    def readability(self, req):
-        stringlength = len(req["text"])
-        response = { "length":"%s" %(stringlength)}
-        return response
 
 @route('/hello2/<name>')
 def index(name):
