@@ -227,9 +227,10 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
               
             </td>
             <td class="code">
-              <div class="highlight"><pre><span class="k">enum</span> <span class="gs">reqType</span> {
-    <span class="nv">textRpt</span>
-    <span class="nv">version</span>
+              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">lineScore</span> {
+    <span class="nv">lineNo    </span><span class="kt">int     </span>
+    <span class="nv">lineTxt   </span><span class="kt">string  </span>
+    <span class="nv">lineScore </span><span class="kt">int     </span>
 }</pre></div>
             </td>
           </tr><tr id="section-3">
@@ -240,10 +241,8 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
               
             </td>
             <td class="code">
-              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">lineScore</span> {
-    <span class="nv">lineNo    </span><span class="kt">int     </span>
-    <span class="nv">lineTxt   </span><span class="kt">string  </span>
-    <span class="nv">lineScore </span><span class="kt">int     </span>
+              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">ReadabilityRequest</span> {
+    <span class="nv">reqData </span><span class="kt">string  </span>
 }</pre></div>
             </td>
           </tr><tr id="section-4">
@@ -254,9 +253,10 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
               
             </td>
             <td class="code">
-              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">ReadabilityRequest</span> {
-    <span class="nv">type    </span><span class="kt">reqType  </span>
-    <span class="nv">reqData </span><span class="kt">string   </span>
+              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">ReadabilityResponse</span> {
+    <span class="nv">resultCode </span><span class="kt">int          </span>
+    <span class="nv">docScore   </span><span class="kt">int          </span>
+    <span class="nv">lineScores </span><span class="kt">[]lineScore  </span>
 }</pre></div>
             </td>
           </tr><tr id="section-5">
@@ -267,22 +267,9 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
               
             </td>
             <td class="code">
-              <div class="highlight"><pre><span class="k">struct</span> <span class="gs">ReadabilityResponse</span> {
-    <span class="nv">resultCode </span><span class="kt">int          </span>
-    <span class="nv">docScore   </span><span class="kt">int          </span>
-    <span class="nv">lineScores </span><span class="kt">[]lineScore  </span>
-}</pre></div>
-            </td>
-          </tr><tr id="section-6">
-            <td class="docs">
-              <div class="pilwrap">
-                <a class="pilcrow" href="#section-6">&#182;</a>
-              </div>
-              
-            </td>
-            <td class="code">
               <div class="highlight"><pre><span class="k">interface</span> <span class="gs">ReadabilityService</span> {
     <span class="nf">readability</span>(<span class="na">req</span> <span class="kt">ReadabilityRequest</span>) <span class="kt">ReadabilityResponse</span>
+    <span class="nf">version</span>() <span class="kt">string</span>
 }</pre></div>
             </td>
           </tr></tbody>

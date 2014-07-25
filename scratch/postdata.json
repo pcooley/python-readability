@@ -2,7 +2,7 @@
   "jsonrpc": "2.0",
   "id": "nJuMVxHoRnHtK5txBd9o",
   "method": "ReadabilityService.readability",
-  "params": [ {"text":"1234567890"}
+  "params": [ {"reqData":"1234567890"}
     
   ]
 }

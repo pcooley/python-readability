@@ -3,11 +3,6 @@
 // 
 //
 
-enum reqType {
-  textRpt
-  version
-}
-
 struct lineScore {
   lineNo    int
   lineTxt   string
@@ -15,7 +10,6 @@ struct lineScore {
 }
 
 struct ReadabilityRequest {
-  type reqType
   reqData string
 }
 
@@ -28,5 +22,6 @@ struct ReadabilityResponse {
 interface ReadabilityService {
   
   readability(req ReadabilityRequest) ReadabilityResponse
+  version() string
 
 }
