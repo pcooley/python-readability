@@ -3,12 +3,26 @@
 // 
 //
 
+enum reqType {
+  textRpt
+  version
+}
+
+struct lineScore {
+  lineNo    int
+  lineTxt   string
+  lineScore int
+}
+
 struct ReadabilityRequest {
-  text string
+  type reqType
+  reqData string
 }
 
 struct ReadabilityResponse {
-  length string
+  resultCode int
+  docScore int
+  lineScores []lineScore
 }
 
 interface ReadabilityService {
