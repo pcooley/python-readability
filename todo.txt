@@ -1,0 +1,19 @@
+To do
+
+Is word count running? yes
+
+extend to sentence level counting
+character count only count non-whitespace
+
+Review readabilty algorithms
+ - calculations
+ - results presentation
+
+Readability
+ - at document level
+ - at ?? paragraph level
+ - at sentence level
+
+================
+
+UI stuff
