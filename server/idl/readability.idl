@@ -16,6 +16,8 @@ struct ReadabilityRequest {
 struct ReadabilityResponse {
   resultCode int
   docScore int
+  characterCount int
+  wordCount int
   lineScores []lineScore
 }
 

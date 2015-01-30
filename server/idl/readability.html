@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Readability Interface</title>
+  <title>readability.idl</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <style type="text/css">
   
@@ -202,7 +202,7 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
         <tr>
           <th class="docs">
             <h1>
-               Readability Interface
+               readability.idl
             </h1>
           </th>
           <th class="code">
@@ -254,9 +254,11 @@ body .il { color: #666666 }                     /* Literal.Number.Integer.Long *
             </td>
             <td class="code">
               <div class="highlight"><pre><span class="k">struct</span> <span class="gs">ReadabilityResponse</span> {
-    <span class="nv">resultCode </span><span class="kt">int          </span>
-    <span class="nv">docScore   </span><span class="kt">int          </span>
-    <span class="nv">lineScores </span><span class="kt">[]lineScore  </span>
+    <span class="nv">resultCode     </span><span class="kt">int          </span>
+    <span class="nv">docScore       </span><span class="kt">int          </span>
+    <span class="nv">characterCount </span><span class="kt">int          </span>
+    <span class="nv">wordCount      </span><span class="kt">int          </span>
+    <span class="nv">lineScores     </span><span class="kt">[]lineScore  </span>
 }</pre></div>
             </td>
           </tr><tr id="section-5">
