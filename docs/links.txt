@@ -9,3 +9,8 @@ https://code.google.com/p/nltk/source/browse/trunk/nltk_contrib/
 
 Readability API
 https://www.mashape.com/ipeirotis/readability-metrics/#!documentation
+
+Examples on the web:
+https://readability-score.com/
+http://read-able.com/ (old-school)
+http://www.usingenglish.com/resources/text-statistics.php ( old-school )
