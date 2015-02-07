@@ -5,6 +5,8 @@ Is word count running? yes
 extend to sentence level counting
 character count only count non-whitespace
 
+Unit testing: test the above
+
 Review readabilty algorithms
  - calculations
  - results presentation
